@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profolio</title>
+        <link rel="icon" type="image/png" href="./image/icon.png">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+        
+    </head>
+
+    <body>
+        <header>
+            
+        </header>
+        <nav>
+            <ul class="grid-container">
+                <li><a href="index.html" class="imgPH"></a>HOME</li>
+                <li><a href="Pokedex.html" class="imgPH"></a>POKEDEX</li>
+                <li><a href="Contact.html" class="imgPH"></a>CONTACT</li>
+                
+                <li><a href="index.html" class="imgPH"></a>HOME</li>
+                <li><a href="Pokedex.html" class="imgPH"></a>POKEDEX</li>
+                <li><a href="Contact.html" class="imgPH"></a>CONTACT</li>
+
+                <li><a href="index.html" class="imgPH"></a>HOME</li>
+                <li><a href="Pokedex.html" class="imgPH"></a>POKEDEX</li>
+                <li><a href="Contact.html" class="imgPH"></a>CONTACT</li>
+            </ul>
+
+            <a href="#" class="Exit"></a>
+        </nav>
+
+        <main>
+            <section class="pokedex">
+
+                <section class="search-bar">
+                    <input type="text" id="pokemonName" placeholder="Search for a Pokémon">
+                    <button onclick="fetchData()">Search</button>
+                </section>
+
+                <section class="pokemon-display">
+                    <section class="pokemon-img">
+                        <img src="image/Frame_img.png" class="Frame_img">
+                        <img src="" alt="pokemon placeholder" id="pokemonSprite" style="display: none;">
+                    </section>
+
+                    <section class="pokemon-status">
+                        <h1>STATUS:</h1>
+                        <p id="pokemonHP">HP:</p>
+                        <p id="pokemonAtk">ATTACK:</p>
+                        <p id="pokemonDef">DEFENSE:</p>   
+                        <p id="SpecialAttack">SPECIAL ATTACK:</p>
+                        <p id="SpecialDef">SPECIAL DEFENSE:</p>
+                        <p id="pokemonSpeed">SPEED:</p>
+                        <p id="pokemonHeight">HEIGHT:</p>
+                        <p id="pokemonWeight">WEIGHT:</p>
+                    </section>
+
+                </section>
+
+                <section class="pokemon-info">
+                    <h1 id="pokemonNameDisplay">NAME:</h1>
+                    <p id="pokemonID">ID :</p>
+                    <p id="pokemonType">TYPE:</p>
+                </section> 
+                
+                <section>
+                    <ul class="pokemon-list">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+
+            </section>
+        </main>
+        
+        <footer>
+
+        </footer>
+        <script src="JS/PokemonAPI.js"></script>
+    </body>
+</html>
