@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #C5ECC9;
+}
+
+.background-loop {
+    position: fixed;
+    top: 0;
+    left: -130px;
+    width: 200%;
+    height: 200%;
+    background-image: url(../image/icon_placeholder.png);
+    background-size: 80px 80px;
+    background-repeat: repeat;
+    transform: rotate(10deg);
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+    animation: scrollBackground 5s linear infinite;
+}
+
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 160px 160px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color : #000;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}

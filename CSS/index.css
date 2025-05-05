@@ -1,0 +1,50 @@
+.frontpage {
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 2%;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* this adds spacing between items */
+    justify-content: center; /* centers all items vertically within the container */
+    align-items: center; /* centers all items horizontally */
+}
+
+.frontpage > li {
+    background-color: blue;
+    height: 100px;
+    border-radius: 50px;
+    display: flex; /* Enables flexbox on <li> */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    width: 100%; /* Ensure the <li> takes full width of its parent */
+}
+
+.frontpage > li a {
+    font-family: 'K2D', sans-serif;
+    color: aliceblue;
+    letter-spacing: 20px;
+    font-size: 30px;
+    text-align: center; /* Optional: ensures text inside <a> is centered */
+}
+
+/* Color for first, second, and third <li> */
+.frontpage > li:nth-child(1) {
+    background-color: #96D57F; /* First item */
+}
+
+.frontpage > li:nth-child(2) {
+    background-color: #DA67A8; /* Second item */
+}
+
+.frontpage > li:nth-child(3) {
+    background-color: #FFF57C; /* Third item */
+}
+
+.row{
+    display: flex;
+    font-family: 'K2D', sans-serif;
+    font-weight: 700;
+}
