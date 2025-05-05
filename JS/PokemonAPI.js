@@ -56,3 +56,28 @@ async function fetchData() {
         console.error(error);
     }
 }
+
+loadPokemonList();
+
+async function loadPokemonList(limit = 200) {
+    try {
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}`);
+        const data = await response.json();
+        const pokemonList = document.getElementById("pokemonList");
+
+        // ננקה את הרשימה הקודמת
+        pokemonList.innerHTML = "";
+
+        for (const pokemon of data.results) {
+            const pokeResponse = await fetch(pokemon.url);
+            const pokeData = await pokeResponse.json();
+            const imgSrc = pokeData.sprites.front_default;
+
+            const li = document.createElement("li");
+            li.innerHTML = `<img src="${imgSrc}" alt="${pokeData.name}" title="${pokeData.name}" />`;
+            pokemonList.appendChild(li);
+        }
+    } catch (error) {
+        console.error("Failed to load Pokémon list:", error);
+    }
+}
