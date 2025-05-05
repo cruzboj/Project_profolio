@@ -30,6 +30,14 @@ nav{
     box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.247);
     margin-left: 100px;
     margin-top: 100px;
+
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(0);
+}
+
+nav.slide-down{
+    transform: translateY(85%);
+    pointer-events: auto;
 }
 
 .grid-container {
@@ -70,17 +78,20 @@ nav{
 }
 
 .Exit{
+    display: inline-block;
     position: absolute;
     margin-left: 43%;
     margin-top: 60%;
     background-image: url(../image/Exit_icon.png);
     background-repeat: no-repeat;
-    /* background-color: #54b9a9; */
+    background-color: #54b9a9;
     background-size: 70px 70px;
     height: 70px;
     width: 70px;
     border-radius: 50%;
+    z-index: 20;
 }
+
 .Exit:hover{
     box-shadow: #54b9a9 0px 10px 15px;
 }
