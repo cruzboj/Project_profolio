@@ -1,0 +1,28 @@
+form{
+    font-family: 'K2D', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(106, 136, 76, 0.219);
+    border-radius: 3%;
+    height: 500px;
+    width: 700px;
+    
+    position: absolute;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 3%;
+
+    font-weight: 300px;
+    color: aliceblue;
+}
+
+label{
+    margin-top: 50px;
+}
+
+input {
+    border: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 40px;
+}
